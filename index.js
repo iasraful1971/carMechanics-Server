@@ -5,7 +5,7 @@ require('dotenv').config();
 const ObjectId = require('mongodb').ObjectId;
 
 const app =express();
-const port = 5000;
+const port =process.env.PORT || 5000;
 
 
 //middleware
@@ -66,7 +66,7 @@ run().catch(console.dir)
 
 
 app.get('/' ,(req ,res) => {
-    res.send("hello world")
+    res.send("runing genius car serveice")
 });
 app.listen(port, () =>{
         console.log("running genious server" , port);
