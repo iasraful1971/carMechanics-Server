@@ -68,7 +68,32 @@ run().catch(console.dir)
 app.get('/' ,(req ,res) => {
     res.send("runing genius car serveice")
 });
+app.get('/hello' ,(req ,res) =>{
+        res.send('updated issue')
+})
 app.listen(port, () =>{
         console.log("running genious server" , port);
 });
+
+//heroko
+/*
+1. create acc 
+2. heroku software install
+3. 
+
+every projects
+1. git init 
+2.git ignore
+3.node modules ,.env 
+4. push everything to git 
+5.make sure local serversite
+6.heroku log in
+7. heroku crete (first time)
+8. git push heroku main
+
+
+----update for 
+1. git add ./ git commit / git push
+2.git push heroku main
+*/
 
